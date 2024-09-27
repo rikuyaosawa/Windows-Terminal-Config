@@ -20,3 +20,7 @@ Set-Alias edge 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 function touch ($command) {
     New-Item -Path $command -ItemType File | out-null && Write-Host Created $command
 }
+
+function gfs ($command) {
+  git fetch && git status
+}
