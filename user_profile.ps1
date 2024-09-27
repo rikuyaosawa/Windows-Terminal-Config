@@ -17,10 +17,18 @@ Set-Alias post 'C:\Users\RikuyaOsawa\AppData\Local\Postman\Postman.exe'
 Set-Alias edge 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe'
 
 # utilities
-function touch ($command) {
+function touch ($command) { # emulate Linux command 'touch'
     New-Item -Path $command -ItemType File | out-null && Write-Host Created $command
 }
 
-function gfs ($command) {
+function gfs ($command) { # execute git fetch and status
   git fetch && git status
+}
+
+function gd ($command) { # copy the current date and time and echo the result
+  (Get-Date -Format "yyyy-MM-ddTHH:mm:ss") | clip && echo (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
+}
+
+function path ($command) { # copy the current directory path and echo the result
+  (Get-Location).Path | clip && echo (pwd)
 }
