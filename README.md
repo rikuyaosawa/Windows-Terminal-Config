@@ -47,6 +47,8 @@ Make sure to match the JSON file name with the file created in (3)<br>
 - Visit [Oh-My-Posh website](https://ohmyposh.dev/docs/themes) and get theme (JSON)
 - Paste the theme inside the file created in (3)
 - At this point, the theme should be applied inside the terminal.
+
+
 (6) Set up terminal autocomplete and history view
 - paste the following lines inside Powershell config
 ```bash
