@@ -11,6 +11,7 @@ Import-Module Terminal-Icons
 Set-Alias v nvim # open neovim
 Set-Alias st start # open windows file explorer
 Set-Alias g git
+Set-Alias c clear
 Set-Alias studio 'C:\AnypointStudio\AnypointStudio.exe'
 Set-Alias sakura 'C:\Program Files (x86)\sakura\sakura.exe'
 Set-Alias post 'C:\Users\RikuyaOsawa\AppData\Local\Postman\Postman.exe'
