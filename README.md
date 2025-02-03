@@ -1,7 +1,5 @@
 # windows-terminal-setup
 
-TODO: https://hackernoon.com/setting-up-a-development-workflow-in-the-windows-terminal
-
 ## Required Installation
 ### Powershell
 NOT Windows Powershell. Powershell can be installed via Microsoft Store.
@@ -29,9 +27,9 @@ choco install oh-my-posh
 cd .config
 mkdir powershell && cd powershell
 ```
-(2) Create a config file 
+(2) Create a config file with the user profile name 
 ```bash
-nvim user_profile.ps1
+nvim [replace-with-username].ps1
 ```
 (3) Create a file for oh-my-posh theme
 ```bash
@@ -48,7 +46,6 @@ Make sure to match the JSON file name with the file created in (3)<br>
 - Paste the theme inside the file created in (3)
 - At this point, the theme should be applied inside the terminal.
 
-
 (6) Set up terminal autocomplete and history view
 - paste the following lines inside Powershell config
 ```bash
@@ -59,3 +56,7 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 ```bash
 Import-Module Terminal-Icons
 ```
+
+## Source
+
+[Setting up a development workflow in the windows terminal](https://hackernoon.com/setting-up-a-development-workflow-in-the-windows-terminal)
